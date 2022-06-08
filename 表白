@@ -1,0 +1,252 @@
+import turtle
+import time
+import random
+ 
+# 爱心函数
+def yellowheart(x, y, liftx):
+ 
+    turtle.pensize(3)
+    turtle.speed(10)
+    turtle.color("red", "red")
+    turtle.up()
+    turtle.goto(x, y)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.left(liftx)
+    turtle.fd(80)
+    turtle.circle(-40, 180)
+    turtle.left(90)
+    turtle.circle(-40, 180)
+    turtle.left(0)
+    turtle.fd(80)
+    turtle.end_fill()
+ 
+ 
+def rose():
+    turtle.speed(0)  # 画笔移动的速度
+    #turtle.tracer(False)
+    # 设置初始位置
+    turtle.penup()  # 提起画笔
+    turtle.left(90)  # 逆时针转动画笔90度
+    turtle.fd(200)
+    turtle.pendown()  # 放下画笔，移动画笔即开始绘制
+    turtle.right(90)
+    # 设置画笔的大小
+    turtle.pensize(2)
+ 
+    # 花蕊
+ 
+    turtle.fillcolor("red")  # 填充颜色
+    turtle.begin_fill()  # 开始填充
+    turtle.circle(10, 180)
+    turtle.circle(25, 110)
+    turtle.left(50)
+    turtle.circle(60, 45)
+    turtle.circle(20, 170)
+    turtle.right(24)
+    turtle.fd(30)
+    turtle.left(10)
+    turtle.circle(30, 110)
+    turtle.fd(20)
+    turtle.left(40)
+    turtle.circle(90, 70)
+    turtle.circle(30, 150)
+    turtle.right(30)
+    turtle.fd(15)
+    turtle.circle(80, 90)
+    turtle.left(15)
+    turtle.fd(45)
+    turtle.right(165)
+    turtle.fd(20)
+    turtle.left(155)
+    turtle.circle(150, 80)
+    turtle.left(50)
+    turtle.circle(150, 90)
+    turtle.end_fill()  # 结束填充
+ 
+    # 右侧花瓣
+    turtle.left(150)
+    turtle.circle(-90, 70)
+    turtle.left(20)
+    turtle.circle(75, 105)
+    turtle.setheading(60)
+    turtle.circle(80, 98)
+    turtle.circle(-90, 40)
+ 
+    # 左侧花瓣
+    turtle.left(180)
+    turtle.circle(90, 40)
+    turtle.circle(-80, 98)
+    turtle.setheading(-83)
+ 
+    # 左侧叶子
+    turtle.fd(30)
+    turtle.left(90)
+    turtle.fd(25)
+    turtle.left(45)
+    turtle.fillcolor("green")
+    turtle.begin_fill()
+    turtle.circle(-80, 90)
+    turtle.right(90)
+    turtle.circle(-80, 90)
+    turtle.end_fill()
+ 
+    turtle.right(135)
+    turtle.fd(60)
+    turtle.left(180)
+    turtle.fd(85)
+    turtle.left(90)
+    turtle.fd(80)
+ 
+    # 右侧叶子
+    turtle.right(90)
+    turtle.right(45)
+    turtle.fillcolor("green")
+    turtle.begin_fill()
+    turtle.circle(80, 90)
+    turtle.left(90)
+    turtle.circle(80, 90)
+    turtle.end_fill()
+ 
+    turtle.left(135)
+    turtle.fd(60)
+    turtle.left(180)
+    turtle.fd(60)
+    turtle.right(90)
+    turtle.circle(200, 50)  # 画一个圆 200 是半径，50 是弧度
+ 
+    time.sleep(1)
+    # turtle.tracer(False)
+    #turtle.pensize(3)
+    #turtle.speed(0)
+    turtle.color("red", "red")
+    turtle.up()
+    turtle.goto(-230, 50)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.left(180)
+    turtle.fd(80)
+    turtle.circle(-40, 180)
+    turtle.left(90)
+    turtle.circle(-40, 180)
+    turtle.left(0)
+    turtle.fd(80)
+    turtle.end_fill()
+ 
+    time.sleep(1)
+    # turtle.tracer(False)
+    #turtle.pensize(3)
+    #turtle.speed(0)
+    turtle.color("red", "red")
+    turtle.up()
+    turtle.goto(-230, -80)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.left(-30)
+    turtle.fd(80)
+    turtle.circle(-40, 180)
+    turtle.left(90)
+    turtle.circle(-40, 180)
+    turtle.left(0)
+    turtle.fd(80)
+    turtle.end_fill()
+ 
+    time.sleep(1)
+    # turtle.tracer(False)
+    # turtle.pensize(3)
+    # turtle.speed(0)
+    turtle.color("red", "red")
+    turtle.up()
+    turtle.goto(-130, -180)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.left(-80)
+    turtle.fd(80)
+    turtle.circle(-40, 180)
+    turtle.left(90)
+    turtle.circle(-40, 180)
+    turtle.left(0)
+    turtle.fd(80)
+    turtle.end_fill()
+ 
+    time.sleep(1)
+    # turtle.tracer(False)
+    # turtle.pensize(3)
+    # turtle.speed(0)
+    turtle.color("red", "red")
+    turtle.up()
+    turtle.goto(200, -200)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.left(-90)
+    turtle.fd(80)
+    turtle.circle(-40, 180)
+    turtle.left(90)
+    turtle.circle(-40, 180)
+    turtle.left(0)
+    turtle.fd(80)
+    turtle.end_fill()
+ 
+    time.sleep(1)
+    # turtle.tracer(False)
+    # turtle.pensize(3)
+    # turtle.speed(0)
+    turtle.color("red", "red")
+    turtle.up()
+    turtle.goto(200, 50)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.left(90)
+    turtle.fd(80)
+    turtle.circle(-40, 180)
+    turtle.left(90)
+    turtle.circle(-40, 180)
+    turtle.left(0)
+    turtle.fd(80)
+    turtle.end_fill()
+ 
+ 
+def figure1():
+    turtle.reset()
+    turtle.tracer(False)
+    rose()
+    yellowheart(-230, 50, 180)  # 左一
+    #time.sleep(2)
+ 
+def figure2():
+    # turtle.reset()
+    turtle.tracer(False)
+    rose()
+    yellowheart(-230, -80, -30)     # 左二
+    # time.sleep(2)
+ 
+def figure3():
+    turtle.reset()
+    turtle.tracer(False)
+    rose()
+    yellowheart(-130, -180, -30)    # 左三
+    # time.sleep(2)
+ 
+def figure4():
+    turtle.reset()
+    turtle.tracer(False)
+    rose()
+    yellowheart(200, 50, 90)        # 右一
+    # ime.sleep(2)
+ 
+def figure5():
+    turtle.reset()
+    turtle.tracer(False)
+    rose()
+    yellowheart(200, -200, -90)  # 右二
+    # time.sleep(2)
+ 
+if __name__ == "__main__":
+    rose()
+    # figure1()
+    #
+    # yellowheart(-230, -80, -30)  # 左二
+    # 不让自动退出,放在程序的最后一行
+    # 不然画画结束后会自动退出
+    turtle.done()
+coding:utf-8
